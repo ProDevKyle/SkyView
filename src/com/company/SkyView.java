@@ -6,7 +6,7 @@ public class SkyView
 
     public SkyView(int numRows, int numCols, double[] scanned)
     {
-        double[][]view = new double[numRows][numCols];
+        view = new double[numRows][numCols];
         int idx = 0;
         int row = 0;
         while (row!=numRows)
@@ -53,7 +53,7 @@ public class SkyView
         {
             for (int j = 0; j < numCols; j++)
             {
-                str = str + view[i][j];
+                str = str + view[i][j] + " ";
             }
             str = str + "\n";
         }
